@@ -53,11 +53,11 @@ public class keyPrivate extends Key{
     public String getPrivateKey(){
         StringBuffer s = new StringBuffer();
         System.out.println("This is private key:");
-        System.out.println("N: " + getN() + " " + "D:" + getD());
+        System.out.println("N: " + getN().toString(16) + " " + "D:" + getD().toString(16));
         s.append("N:");
-        s.append(getN());
+        s.append(getN().toString(16));
         s.append("   D:");
-        s.append(getD());
+        s.append(getD().toString(16));
         return s.toString();
     }
 }
