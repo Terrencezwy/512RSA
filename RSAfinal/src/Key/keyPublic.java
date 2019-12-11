@@ -56,11 +56,11 @@ public class keyPublic extends Key{
     public String getPublicKey(){
         StringBuffer s = new StringBuffer();
         System.out.println("This is public key:");
-        System.out.println("N: " + getN() + " " + "E:" + getE());
+        System.out.println("N: " + getN().toString(16) + " " + "E:" + getE().toString(16));
         s.append("N:");
-        s.append(getN());
+        s.append(getN().toString(16));
         s.append("   E:");
-        s.append(getE());
+        s.append(getE().toString(16));
         return s.toString();
     }
 
